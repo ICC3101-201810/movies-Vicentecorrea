@@ -15,6 +15,12 @@ namespace VistasLab
         public VentanaPrincipal()
         {
             InitializeComponent();
+            InicializarComboBox();
+        }
+
+        public void InicializarComboBox()
+        {
+
         }
     }
 }

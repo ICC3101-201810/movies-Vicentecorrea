@@ -16,7 +16,8 @@ namespace VistasLab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
+            Application.Run(ventanaPrincipal);
 
         }
     }
