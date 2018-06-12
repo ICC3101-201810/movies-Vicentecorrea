@@ -45,6 +45,7 @@
             this.BotonPeliculas.TabIndex = 0;
             this.BotonPeliculas.Text = "Peliculas";
             this.BotonPeliculas.UseVisualStyleBackColor = true;
+            this.BotonPeliculas.Click += new System.EventHandler(this.BotonPeliculas_Click);
             // 
             // BotonActores
             // 

@@ -22,5 +22,10 @@ namespace VistasLab
         {
 
         }
+
+        private void BotonPeliculas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

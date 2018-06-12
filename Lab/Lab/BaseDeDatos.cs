@@ -8,15 +8,15 @@ namespace Lab
 {
     class BaseDeDatos
     {
-        Pelicula pelicula;
-        Persona persona;
-        Estudio estudio;
+        List<Pelicula> peliculas;
+        List<Persona> personas;
+        List<Estudio> estudios;
         
-        public BaseDeDatos(Pelicula pelicula, Persona persona, Estudio estudio)
+        public BaseDeDatos(List<Pelicula> pelicula, List<Persona> persona, List<Estudio> estudio)
         {
-            this.pelicula = pelicula;
-            this.persona = persona;
-            this.estudio = estudio;
+            this.peliculas = pelicula;
+            this.personas = persona;
+            this.estudios = estudio;
         }
     }
 }

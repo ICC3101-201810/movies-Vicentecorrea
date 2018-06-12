@@ -8,5 +8,11 @@ namespace VistasLab
 {
     class VentanaPrincipalController
     {
+        VentanaPrincipal ventanaPrincipal;
+
+        public VentanaPrincipalController(VentanaPrincipal ventanaPrincipal)
+        {
+            this.ventanaPrincipal = ventanaPrincipal;
+        }
     }
 }

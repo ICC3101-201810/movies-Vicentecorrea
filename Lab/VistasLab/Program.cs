@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace VistasLab
 {
     static class Program
@@ -16,6 +17,7 @@ namespace VistasLab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
             Application.Run(ventanaPrincipal);
 
