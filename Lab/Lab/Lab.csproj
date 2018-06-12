@@ -42,10 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actor.cs" />
     <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="Director.cs" />
     <Compile Include="Estudio.cs" />
     <Compile Include="Pelicula.cs" />
     <Compile Include="Persona.cs" />
+    <Compile Include="Productor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

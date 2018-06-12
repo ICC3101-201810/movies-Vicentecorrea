@@ -8,5 +8,15 @@ namespace Lab
 {
     class Estudio
     {
+        string nombre;
+        string direccion;
+        string fechaDeApertura;
+
+        public Estudio(string n, string d, string fda)
+        {
+            this.nombre = n;
+            this.direccion = d;
+            this.fechaDeApertura = fda;
+        }
     }
 }

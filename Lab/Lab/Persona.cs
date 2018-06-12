@@ -8,5 +8,17 @@ namespace Lab
 {
     class Persona
     {
+        string nombre;
+        string apellido;
+        string fechaDeNacimiento;
+        string biografia;
+
+        public Persona(string nombre, string apellido, string fechaDeNacimiento, string biografia)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.fechaDeNacimiento = fechaDeNacimiento;
+            this.biografia = biografia;
+        }
     }
 }
