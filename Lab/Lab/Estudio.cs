@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab
 {
-    class Estudio
+    public class Estudio
     {
-        string nombre;
-        string direccion;
-        string fechaDeApertura;
+        public string nombre;
+        public string direccion;
+        public string fechaDeApertura;
 
         public Estudio(string n, string d, string fda)
         {

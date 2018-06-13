@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab
 {
-    class BaseDeDatos
+    public static class BaseDeDatos
     {
-        List<Pelicula> peliculas;
-        List<Persona> personas;
-        List<Estudio> estudios;
-        
-        public BaseDeDatos(List<Pelicula> pelicula, List<Persona> persona, List<Estudio> estudio)
-        {
-            this.peliculas = pelicula;
-            this.personas = persona;
-            this.estudios = estudio;
-        }
+        public static List<Pelicula> peliculas = new List<Pelicula>();
+        public static List<Persona> personas = new List<Persona>();
+        public static List<Estudio> estudios = new List<Estudio>();
+
     }
 }

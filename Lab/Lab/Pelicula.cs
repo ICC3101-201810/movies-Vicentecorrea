@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab
 {
-    class Pelicula
+    public class Pelicula
     {
-        string nombre;
-        Director director;
-        string fechaDeEstreno;
-        string descripcion;
-        double presupuesto;
-        Estudio estudio;
+        public string nombre;
+        public Director director;
+        public string fechaDeEstreno;
+        public string descripcion;
+        public double presupuesto;
+        public Estudio estudio;
 
         public Pelicula(string n, Director director, string fde, string des, double p, Estudio estudio)
         {

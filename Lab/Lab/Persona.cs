@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lab
 {
-    class Persona
+    public class Persona
     {
-        string nombre;
-        string apellido;
-        string fechaDeNacimiento;
-        string biografia;
+        public string nombre;
+        public string apellido;
+        public string fechaDeNacimiento;
+        public string biografia;
 
         public Persona(string nombre, string apellido, string fechaDeNacimiento, string biografia)
         {
