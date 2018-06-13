@@ -8,5 +8,6 @@ namespace Lab
 {
     class Director : Persona
     {
+        public Director(string n, string a, string fdn, string b) : base(n, a, fdn, b) { }
     }
 }

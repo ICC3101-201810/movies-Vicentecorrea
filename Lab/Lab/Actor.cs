@@ -8,5 +8,6 @@ namespace Lab
 {
     class Actor : Persona
     {
+        public Actor(string n, string a, string fdn, string b) : base(n, a, fdn, b) { }
     }
 }
