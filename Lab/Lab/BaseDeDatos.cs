@@ -13,7 +13,7 @@ namespace Lab
         public static Estudio CenturyFox = new Estudio("Century Fox", "Calle Falsa 123", "23 de agosto de 1994");
         public static Estudio ColumbiaPictures = new Estudio("Columbia Pictures", "Colombia 973", "7 de enero de 1834");
         public static Pelicula ESdlA = new Pelicula("El Señor de los Anillos", PeterJackson, "10 de abril de 2002", "muy wena", 200000, CenturyFox);
-        public static Pelicula StarWars = new Pelicula("Star Wars", GeorgeLucas, "17 de enero de 1986", "un clasico de los clasicos", 85000, CenturyFox);
+        public static Pelicula StarWars = new Pelicula("Star Wars", GeorgeLucas, "17 de enero de 1986", "un clasico de los clasicos", 85000, ColumbiaPictures);
         public static Actor WillSmith = new Actor("Will", "Smith", "12 de octubre de 1983", "El papa de karate kid");
         public static Actor CeciliaBolocco = new Actor("Cecilia", "Bolocco", "1 de abril de 1780", "La miss universo chilena, orgullo de la nacion");
         public static Productor StevenSpielBerg = new Productor("Steven", "Spielberg", "29 de febrero de 1956", "es viejo");

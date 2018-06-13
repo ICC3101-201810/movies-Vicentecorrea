@@ -15,6 +15,7 @@ namespace VistasLab
     public partial class VentanaPrincipal : Form
     {
         public event EventHandler OnAbrirPeliculas;
+        public event EventHandler OnAbrirActores;
 
         public VentanaPrincipal()
         {
@@ -44,7 +45,22 @@ namespace VistasLab
         private void VentanaPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             
+        }
 
+        private void BotonActores_Click(object sender, EventArgs e)
+        {
+            OnAbrirActores(this, EventArgs.Empty);
+            this.Hide();
+        }
+
+        private void VentanaPrincipal_FormLoad(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VentanaPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Environment.Exit(0);
         }
     }
 }

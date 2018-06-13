@@ -55,6 +55,7 @@
             this.BotonActores.TabIndex = 1;
             this.BotonActores.Text = "Actores";
             this.BotonActores.UseVisualStyleBackColor = true;
+            this.BotonActores.Click += new System.EventHandler(this.BotonActores_Click);
             // 
             // BotonDirectores
             // 
@@ -105,7 +106,8 @@
             this.Name = "VentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VentanaPrincipal";
-            this.Load += new System.EventHandler(this.timer1_Tick);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VentanaPrincipal_FormClosed);
+            this.Load += new System.EventHandler(this.VentanaPrincipal_FormLoad);
             this.ResumeLayout(false);
 
         }
