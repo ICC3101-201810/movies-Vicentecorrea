@@ -29,6 +29,7 @@ namespace VistasLab
 
         private void BotonPeliculas_Click(object sender, EventArgs e)
         {
+            BaseDeDatos.mostrar = false;
             OnAbrirPeliculas(this, EventArgs.Empty);
             this.Hide();
         }
@@ -37,11 +38,6 @@ namespace VistasLab
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Bienvenida bienvenida = new Bienvenida();
-            bienvenida.Show();
-            Thread.Sleep(1000); // cambiar a 5000
-            bienvenida.Close();
-            
 
         }
     }

@@ -18,6 +18,7 @@ namespace Lab
         public static List<Persona> personas = new List<Persona> { PeterJackson, GeorgeLucas };
         public static List<Estudio> estudios = new List<Estudio> { CenturyFox };
 
+        public static bool mostrar = false;
     }
 
 }

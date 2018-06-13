@@ -19,10 +19,14 @@ namespace VistasLab
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            Bienvenida bienvenida = new Bienvenida();
+            bienvenida.Show();
+            Thread.Sleep(1000); // cambiar a 5000
+            bienvenida.Close();
+
             VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
             VentanaPrincipalController ventanaPrincipalController = new VentanaPrincipalController(ventanaPrincipal);
             Application.Run(ventanaPrincipal);
-            
 
         }
     }

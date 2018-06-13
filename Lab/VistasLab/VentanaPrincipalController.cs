@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab;
 
 namespace VistasLab
 {
@@ -18,8 +19,10 @@ namespace VistasLab
 
         private void VentanaPrincipal_OnAbrirPeliculas(object sender, EventArgs e)
         {
+            
             PeliculasForm peliculasForm = new PeliculasForm();
             PeliculasController peliculasController = new PeliculasController(peliculasForm);
+            BaseDeDatos.mostrar = true;
             peliculasForm.Show();
         }
     }
