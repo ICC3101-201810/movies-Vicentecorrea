@@ -34,10 +34,16 @@ namespace VistasLab
             this.Hide();
         }
 
-        private void BotonPeliculas_MouseClick(object sender, MouseEventArgs e){}
+        private void BotonPeliculas_MouseClick(object sender, MouseEventArgs e) { }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
+        }
+
+        private void VentanaPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
 
         }
     }

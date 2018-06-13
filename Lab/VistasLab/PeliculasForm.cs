@@ -55,7 +55,7 @@ namespace VistasLab
 
         private void PeliculasForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void PeliculasForm_FormClosing(object sender, FormClosingEventArgs e)

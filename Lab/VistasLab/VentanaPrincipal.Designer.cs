@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.BotonPeliculas = new System.Windows.Forms.Button();
             this.BotonActores = new System.Windows.Forms.Button();
             this.BotonDirectores = new System.Windows.Forms.Button();
             this.BotonProductores = new System.Windows.Forms.Button();
             this.BotonEstudios = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // BotonPeliculas
@@ -93,10 +91,6 @@
             this.comboBox1.Size = new System.Drawing.Size(399, 21);
             this.comboBox1.TabIndex = 5;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,6 +118,5 @@
         private System.Windows.Forms.Button BotonProductores;
         private System.Windows.Forms.Button BotonEstudios;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Timer timer1;
     }
 }
