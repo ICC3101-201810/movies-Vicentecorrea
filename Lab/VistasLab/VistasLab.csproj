@@ -45,6 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarForm.Designer.cs">
+      <DependentUpon>BuscarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarController.cs" />
     <Compile Include="EstudiosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +108,9 @@
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaPrincipalController.cs" />
+    <EmbeddedResource Include="BuscarForm.resx">
+      <DependentUpon>BuscarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstudiosForm.resx">
       <DependentUpon>EstudiosForm.cs</DependentUpon>
     </EmbeddedResource>

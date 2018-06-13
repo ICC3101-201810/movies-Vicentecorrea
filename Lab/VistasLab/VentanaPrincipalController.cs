@@ -19,6 +19,7 @@ namespace VistasLab
             this.ventanaPrincipal.OnAbrirDirectores += VentanaPrincipal_OnAbrirDirectores;
             this.ventanaPrincipal.OnAbrirProductores += VentanaPrincipal_OnAbrirProductores;
             this.ventanaPrincipal.OnAbrirEstudios += VentanaPrincipal_OnAbrirEstudios;
+            this.ventanaPrincipal.OnAbrirBuscar += VentanaPrincipal_OnAbrirBuscar;
         }
 
         private void VentanaPrincipal_OnAbrirPeliculas(object sender, EventArgs e)
@@ -60,6 +61,14 @@ namespace VistasLab
             EstudiosController estudiosController = new EstudiosController(estudiosForm);
             BaseDeDatos.mostrar = true;
             estudiosForm.Show();
+        }
+
+        private void VentanaPrincipal_OnAbrirBuscar(object sender, EventArgs e)
+        {
+            BuscarForm buscarForm = new BuscarForm();
+            BuscarController buscarController = new BuscarController(buscarForm);
+            BaseDeDatos.mostrar = true;
+            buscarForm.Show();
         }
     }
 }

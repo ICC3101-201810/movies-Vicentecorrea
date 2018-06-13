@@ -27,7 +27,7 @@ namespace VistasLab
             List<string> nombresActores = new List<string>();
             foreach (Actor a in BaseDeDatos.actores)
             {
-                nombresActores.Add(a.nombre);
+                nombresActores.Add(a.nombre + " " + a.apellido);
             }  
             listBox1.DataSource = nombresActores;
         }
@@ -38,7 +38,7 @@ namespace VistasLab
             { 
                 foreach (Actor actor in BaseDeDatos.actores)
                 {
-                    if (actor.nombre == listBox1.SelectedItem.ToString())
+                    if ((actor.nombre + " " + actor.apellido) == listBox1.SelectedItem.ToString())
                     {
                         MessageBox.Show($"Nombre: {actor.nombre} {actor.apellido}\n" +
                             $"Fecha de nacimiento: {actor.fechaDeNacimiento}\n" +

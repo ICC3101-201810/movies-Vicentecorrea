@@ -19,6 +19,7 @@ namespace VistasLab
         public event EventHandler OnAbrirDirectores;
         public event EventHandler OnAbrirProductores;
         public event EventHandler OnAbrirEstudios;
+        public event EventHandler OnAbrirBuscar;
 
         public VentanaPrincipal()
         {
@@ -28,7 +29,7 @@ namespace VistasLab
 
         public void InicializarComboBox()
         {
-
+            
         }
 
         private void BotonPeliculas_Click(object sender, EventArgs e)
@@ -86,6 +87,32 @@ namespace VistasLab
             BaseDeDatos.mostrar = false;
             OnAbrirEstudios(this, EventArgs.Empty);
             this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BotonBuscar_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length >= 3)
+            {
+                BaseDeDatos.buscado = textBox1.Text;
+                BaseDeDatos.mostrar = false;
+                OnAbrirBuscar(this, EventArgs.Empty);
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Debes ingresar minimos 3 caracteres", "Error de busqueda");
+            }
+            
         }
     }
 }

@@ -33,7 +33,8 @@
             this.BotonDirectores = new System.Windows.Forms.Button();
             this.BotonProductores = new System.Windows.Forms.Button();
             this.BotonEstudios = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BotonBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BotonPeliculas
@@ -87,20 +88,31 @@
             this.BotonEstudios.UseVisualStyleBackColor = true;
             this.BotonEstudios.Click += new System.EventHandler(this.BotonEstudios_Click);
             // 
-            // comboBox1
+            // textBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(399, 21);
-            this.comboBox1.TabIndex = 5;
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(281, 20);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // BotonBuscar
+            // 
+            this.BotonBuscar.Location = new System.Drawing.Point(299, 12);
+            this.BotonBuscar.Name = "BotonBuscar";
+            this.BotonBuscar.Size = new System.Drawing.Size(112, 20);
+            this.BotonBuscar.TabIndex = 7;
+            this.BotonBuscar.Text = "Buscar";
+            this.BotonBuscar.UseVisualStyleBackColor = true;
+            this.BotonBuscar.Click += new System.EventHandler(this.BotonBuscar_Click);
             // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 103);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(432, 123);
+            this.Controls.Add(this.BotonBuscar);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BotonEstudios);
             this.Controls.Add(this.BotonProductores);
             this.Controls.Add(this.BotonDirectores);
@@ -112,6 +124,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VentanaPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.VentanaPrincipal_FormLoad);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -122,6 +135,7 @@
         private System.Windows.Forms.Button BotonDirectores;
         private System.Windows.Forms.Button BotonProductores;
         private System.Windows.Forms.Button BotonEstudios;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BotonBuscar;
     }
 }

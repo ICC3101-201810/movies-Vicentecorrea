@@ -27,7 +27,7 @@ namespace VistasLab
             List<string> nombresDirectores = new List<string>();
             foreach (Director d in BaseDeDatos.directores)
             {
-                nombresDirectores.Add(d.nombre);
+                nombresDirectores.Add(d.nombre + " " + d.apellido);
             }  
             listBox1.DataSource = nombresDirectores;
         }
@@ -38,7 +38,7 @@ namespace VistasLab
             { 
                 foreach (Director director in BaseDeDatos.directores)
                 {
-                    if (director.nombre == listBox1.SelectedItem.ToString())
+                    if ((director.nombre + " " + director.apellido) == listBox1.SelectedItem.ToString())
                     {
                         MessageBox.Show($"Nombre: {director.nombre} {director.apellido}\n" +
                             $"Fecha de nacimiento: {director.fechaDeNacimiento}\n" +
