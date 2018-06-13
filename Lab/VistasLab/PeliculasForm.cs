@@ -16,14 +16,38 @@ namespace VistasLab
         public PeliculasForm()
         {
             InitializeComponent();
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            //InicializarLista();
+            List<string> nombresPeliculas = new List<string>();
             foreach (Pelicula p in BaseDeDatos.peliculas)
             {
-                MessageBox.Show(p.nombre);
+                nombresPeliculas.Add(p.nombre);
             }
+            this.listBox1.DataSource = nombresPeliculas;
+        }
+        /*
+        public void InicializarLista()
+        {
+            List<string> nombresPeliculas = new List<string>();
+            foreach (Pelicula p in BaseDeDatos.peliculas)
+            {
+                nombresPeliculas.Add(p.nombre);
+            }
+            listBox1.DataSource = nombresPeliculas;
+        }
+        */
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PeliculasForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PeliculasForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

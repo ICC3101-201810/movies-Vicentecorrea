@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Lab;
 
 namespace VistasLab
 {
@@ -38,7 +39,7 @@ namespace VistasLab
         {
             Bienvenida bienvenida = new Bienvenida();
             bienvenida.Show();
-            Thread.Sleep(5000);
+            Thread.Sleep(1000); // cambiar a 5000
             bienvenida.Close();
             
 

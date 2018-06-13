@@ -40,7 +40,7 @@
             // 
             // BotonPeliculas
             // 
-            this.BotonPeliculas.Location = new System.Drawing.Point(197, 266);
+            this.BotonPeliculas.Location = new System.Drawing.Point(12, 57);
             this.BotonPeliculas.Name = "BotonPeliculas";
             this.BotonPeliculas.Size = new System.Drawing.Size(75, 23);
             this.BotonPeliculas.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // BotonActores
             // 
-            this.BotonActores.Location = new System.Drawing.Point(278, 266);
+            this.BotonActores.Location = new System.Drawing.Point(93, 57);
             this.BotonActores.Name = "BotonActores";
             this.BotonActores.Size = new System.Drawing.Size(75, 23);
             this.BotonActores.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             // BotonDirectores
             // 
-            this.BotonDirectores.Location = new System.Drawing.Point(359, 266);
+            this.BotonDirectores.Location = new System.Drawing.Point(174, 57);
             this.BotonDirectores.Name = "BotonDirectores";
             this.BotonDirectores.Size = new System.Drawing.Size(75, 23);
             this.BotonDirectores.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // BotonProductores
             // 
-            this.BotonProductores.Location = new System.Drawing.Point(440, 266);
+            this.BotonProductores.Location = new System.Drawing.Point(255, 57);
             this.BotonProductores.Name = "BotonProductores";
             this.BotonProductores.Size = new System.Drawing.Size(75, 23);
             this.BotonProductores.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             // BotonEstudios
             // 
-            this.BotonEstudios.Location = new System.Drawing.Point(521, 266);
+            this.BotonEstudios.Location = new System.Drawing.Point(336, 57);
             this.BotonEstudios.Name = "BotonEstudios";
             this.BotonEstudios.Size = new System.Drawing.Size(75, 23);
             this.BotonEstudios.TabIndex = 4;
@@ -88,7 +88,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(197, 206);
+            this.comboBox1.Location = new System.Drawing.Point(12, 12);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(399, 21);
             this.comboBox1.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(432, 103);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.BotonEstudios);
             this.Controls.Add(this.BotonProductores);
@@ -109,6 +109,7 @@
             this.Controls.Add(this.BotonActores);
             this.Controls.Add(this.BotonPeliculas);
             this.Name = "VentanaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VentanaPrincipal";
             this.Load += new System.EventHandler(this.timer1_Tick);
             this.ResumeLayout(false);

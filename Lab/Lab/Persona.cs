@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab
 {
-    public class Persona
+    public abstract class Persona
     {
         public string nombre;
         public string apellido;
