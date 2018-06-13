@@ -13,6 +13,14 @@ namespace VistasLab
         public VentanaPrincipalController(VentanaPrincipal ventanaPrincipal)
         {
             this.ventanaPrincipal = ventanaPrincipal;
+            this.ventanaPrincipal.OnAbrirPeliculas += VentanaPrincipal_OnAbrirPeliculas; 
+        }
+
+        private void VentanaPrincipal_OnAbrirPeliculas(object sender, EventArgs e)
+        {
+            PeliculasForm peliculasForm = new PeliculasForm();
+            PeliculasController peliculasController = new PeliculasController(peliculasForm);
+            peliculasForm.Show();
         }
     }
 }

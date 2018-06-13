@@ -7,22 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace VistasLab
 {
-    public partial class Form1 : Form
+    public partial class PeliculasForm : Form
     {
-        public Form1()
+        public PeliculasForm()
         {
             InitializeComponent();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
-        
     }
 }
