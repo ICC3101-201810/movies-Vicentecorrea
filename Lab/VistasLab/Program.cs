@@ -27,7 +27,6 @@ namespace VistasLab
             VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
             VentanaPrincipalController ventanaPrincipalController = new VentanaPrincipalController(ventanaPrincipal);
             Application.Run(ventanaPrincipal);
-
         }
     }
 }

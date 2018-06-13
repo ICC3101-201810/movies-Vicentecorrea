@@ -30,7 +30,8 @@ namespace VistasLab
                 if (t is Pelicula)
                 {
                     Pelicula t2 = (Pelicula)t;
-                    if ((t2.nombre == BaseDeDatos.buscado) || (t2.descripcion.Contains(BaseDeDatos.buscado)) || (t2.nombre.Contains(BaseDeDatos.buscado)))
+                    if ((t2.nombre == BaseDeDatos.buscado) || (t2.descripcion.Contains(BaseDeDatos.buscado)) || (t2.nombre.Contains(BaseDeDatos.buscado))
+                        || (t2.director.nombre == BaseDeDatos.buscado) || (t2.director.apellido == BaseDeDatos.buscado))
                     {
                         todos.Add(t2.nombre);
                     }
