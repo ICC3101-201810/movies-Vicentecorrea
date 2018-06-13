@@ -65,6 +65,7 @@
             this.BotonDirectores.TabIndex = 2;
             this.BotonDirectores.Text = "Directores";
             this.BotonDirectores.UseVisualStyleBackColor = true;
+            this.BotonDirectores.Click += new System.EventHandler(this.BotonDirectores_Click);
             // 
             // BotonProductores
             // 
@@ -74,6 +75,7 @@
             this.BotonProductores.TabIndex = 3;
             this.BotonProductores.Text = "Productores";
             this.BotonProductores.UseVisualStyleBackColor = true;
+            this.BotonProductores.Click += new System.EventHandler(this.BotonProductores_Click);
             // 
             // BotonEstudios
             // 
@@ -83,6 +85,7 @@
             this.BotonEstudios.TabIndex = 4;
             this.BotonEstudios.Text = "Estudios";
             this.BotonEstudios.UseVisualStyleBackColor = true;
+            this.BotonEstudios.Click += new System.EventHandler(this.BotonEstudios_Click);
             // 
             // comboBox1
             // 

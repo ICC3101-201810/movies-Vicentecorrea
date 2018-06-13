@@ -16,6 +16,9 @@ namespace VistasLab
     {
         public event EventHandler OnAbrirPeliculas;
         public event EventHandler OnAbrirActores;
+        public event EventHandler OnAbrirDirectores;
+        public event EventHandler OnAbrirProductores;
+        public event EventHandler OnAbrirEstudios;
 
         public VentanaPrincipal()
         {
@@ -49,6 +52,7 @@ namespace VistasLab
 
         private void BotonActores_Click(object sender, EventArgs e)
         {
+            BaseDeDatos.mostrar = false;
             OnAbrirActores(this, EventArgs.Empty);
             this.Hide();
         }
@@ -61,6 +65,27 @@ namespace VistasLab
         private void VentanaPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void BotonDirectores_Click(object sender, EventArgs e)
+        {
+            BaseDeDatos.mostrar = false;
+            OnAbrirDirectores(this, EventArgs.Empty);
+            this.Hide();
+        }
+
+        private void BotonProductores_Click(object sender, EventArgs e)
+        {
+            BaseDeDatos.mostrar = false;
+            OnAbrirProductores(this, EventArgs.Empty);
+            this.Hide();
+        }
+
+        private void BotonEstudios_Click(object sender, EventArgs e)
+        {
+            BaseDeDatos.mostrar = false;
+            OnAbrirEstudios(this, EventArgs.Empty);
+            this.Hide();
         }
     }
 }

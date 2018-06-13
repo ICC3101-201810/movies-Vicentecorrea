@@ -16,6 +16,9 @@ namespace VistasLab
             this.ventanaPrincipal = ventanaPrincipal;
             this.ventanaPrincipal.OnAbrirPeliculas += VentanaPrincipal_OnAbrirPeliculas;
             this.ventanaPrincipal.OnAbrirActores += VentanaPrincipal_OnAbrirActores;
+            this.ventanaPrincipal.OnAbrirDirectores += VentanaPrincipal_OnAbrirDirectores;
+            this.ventanaPrincipal.OnAbrirProductores += VentanaPrincipal_OnAbrirProductores;
+            this.ventanaPrincipal.OnAbrirEstudios += VentanaPrincipal_OnAbrirEstudios;
         }
 
         private void VentanaPrincipal_OnAbrirPeliculas(object sender, EventArgs e)
@@ -33,6 +36,30 @@ namespace VistasLab
             ActoresController actoresController = new ActoresController(actoresForm);
             BaseDeDatos.mostrar = true;
             actoresForm.Show();
+        }
+
+        private void VentanaPrincipal_OnAbrirDirectores(object sender, EventArgs e)
+        {
+            DirectoresForm directoresForm = new DirectoresForm();
+            DirectoresController directoresController = new DirectoresController(directoresForm);
+            BaseDeDatos.mostrar = true;
+            directoresForm.Show();
+        }
+
+        private void VentanaPrincipal_OnAbrirProductores(object sender, EventArgs e)
+        {
+            ProductoresForm productoresForm = new ProductoresForm();
+            ProductoresController productoresController = new ProductoresController(productoresForm);
+            BaseDeDatos.mostrar = true;
+            productoresForm.Show();
+        }
+
+        private void VentanaPrincipal_OnAbrirEstudios(object sender, EventArgs e)
+        {
+            EstudiosForm estudiosForm = new EstudiosForm();
+            EstudiosController estudiosController = new EstudiosController(estudiosForm);
+            BaseDeDatos.mostrar = true;
+            estudiosForm.Show();
         }
     }
 }

@@ -24,6 +24,7 @@ namespace Lab
         public static List<Estudio> estudios = new List<Estudio> { CenturyFox, ColumbiaPictures };
         public static List<Actor> actores = new List<Actor> { WillSmith, CeciliaBolocco };
         public static List<Productor> productores = new List<Productor> { StevenSpielBerg, AngelinaJolie };
+        public static List<Director> directores = new List<Director> { PeterJackson, GeorgeLucas };
 
         public static bool mostrar = false;
     }

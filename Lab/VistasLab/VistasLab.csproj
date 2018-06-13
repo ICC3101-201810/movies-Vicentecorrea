@@ -45,6 +45,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EstudiosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstudiosForm.Designer.cs">
+      <DependentUpon>EstudiosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstudiosController.cs" />
+    <Compile Include="ProductoresController.cs" />
+    <Compile Include="ProductoresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductoresForm.Designer.cs">
+      <DependentUpon>ProductoresForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectoresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectoresForm.Designer.cs">
+      <DependentUpon>DirectoresForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectoresController.cs" />
     <Compile Include="Bienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +101,15 @@
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaPrincipalController.cs" />
+    <EmbeddedResource Include="EstudiosForm.resx">
+      <DependentUpon>EstudiosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductoresForm.resx">
+      <DependentUpon>ProductoresForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectoresForm.resx">
+      <DependentUpon>DirectoresForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bienvenida.resx">
       <DependentUpon>Bienvenida.cs</DependentUpon>
     </EmbeddedResource>
